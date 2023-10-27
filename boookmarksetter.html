@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="bookmark-container pt-4">
+        <p class="text-white">Hello</p>
+        <h1 class="text-white" style="font-size:25px;">Jane Doe</h1>
+        <div class="bookmark-section p-4">
+            <h1 style="font-size:20px;" class="text-center mb-4">Bookmark Your Favourite Sites</h1>
+            <div class="form-container p-4">
+                <form id="bookmarkForm">
+                    <label for="siteNameInput" style="font-weight:bold;color:#7b8794">SITE NAME</label><br>
+                    <input class="input-cls" id="siteNameInput" placeholder="Enter site name" />
+                    <p id="siteNameErrMsg" class="text-danger"></p>
+                    <label for="siteUrlInput" style="font-weight:bold;color:#7b8794">SITE URL</label><br>
+                    <input class="input-cls" id="siteUrlInput" placeholder="Enter site URL" />
+                    <p id="siteUrlErrMsg" class="text-danger"></p>
+                    <div class="d-flex flex-row justify-content-end">
+                        <button class="form-button text-white" type="submit" id="submitBtn">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <div class="p-3 mt-4" id="bookmarkres">
+                <ul id="bookmarksList">
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
